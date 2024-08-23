@@ -7,13 +7,13 @@
 // Package socket implements a subset of the Noise protocol framework on top of websockets as used by WhatsApp.
 //
 // There shouldn't be any need to manually interact with this package.
-// The Client struct in the top-level whatsmeow package handles everything.
+// The Client struct in the top-level waSocket package handles everything.
 package socket
 
 import (
 	"errors"
 
-	"go.mau.fi/whatsmeow/binary/token"
+	"github.com/amiruldev20/wasock-test/binary/token"
 )
 
 const (

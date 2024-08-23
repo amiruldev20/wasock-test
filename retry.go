@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package waSocket
 
 import (
 	"context"
@@ -20,14 +20,14 @@ import (
 	"go.mau.fi/libsignal/protocol"
 	"google.golang.org/protobuf/proto"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	waProto "go.mau.fi/whatsmeow/binary/proto"
-	"go.mau.fi/whatsmeow/proto/waCommon"
-	"go.mau.fi/whatsmeow/proto/waConsumerApplication"
-	"go.mau.fi/whatsmeow/proto/waMsgApplication"
-	"go.mau.fi/whatsmeow/proto/waMsgTransport"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
+	waBinary "github.com/amiruldev20/wasock-test/binary"
+	waProto "github.com/amiruldev20/wasock-test/binary/proto"
+	"github.com/amiruldev20/wasock-test/proto/waCommon"
+	"github.com/amiruldev20/wasock-test/proto/waConsumerApplication"
+	"github.com/amiruldev20/wasock-test/proto/waMsgApplication"
+	"github.com/amiruldev20/wasock-test/proto/waMsgTransport"
+	"github.com/amiruldev20/wasock-test/types"
+	"github.com/amiruldev20/wasock-test/types/events"
 )
 
 // Number of sent messages to cache in memory for handling retry receipts.

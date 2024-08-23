@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-// Package events contains all the events that whatsmeow.Client emits to functions registered with AddEventHandler.
+// Package events contains all the events that waSocket.Client emits to functions registered with AddEventHandler.
 package events
 
 import (
@@ -12,14 +12,14 @@ import (
 	"strconv"
 	"time"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	waProto "go.mau.fi/whatsmeow/binary/proto"
-	armadillo "go.mau.fi/whatsmeow/proto"
-	"go.mau.fi/whatsmeow/proto/waArmadilloApplication"
-	"go.mau.fi/whatsmeow/proto/waConsumerApplication"
-	"go.mau.fi/whatsmeow/proto/waMsgApplication"
-	"go.mau.fi/whatsmeow/proto/waMsgTransport"
-	"go.mau.fi/whatsmeow/types"
+	waBinary "github.com/amiruldev20/wasock-test/binary"
+	waProto "github.com/amiruldev20/wasock-test/binary/proto"
+	armadillo "github.com/amiruldev20/wasock-test/proto"
+	"github.com/amiruldev20/wasock-test/proto/waArmadilloApplication"
+	"github.com/amiruldev20/wasock-test/proto/waConsumerApplication"
+	"github.com/amiruldev20/wasock-test/proto/waMsgApplication"
+	"github.com/amiruldev20/wasock-test/proto/waMsgTransport"
+	"github.com/amiruldev20/wasock-test/types"
 )
 
 // QR is emitted after connecting when there's no session data in the device store.

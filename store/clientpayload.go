@@ -17,7 +17,7 @@ import (
 
 	"go.mau.fi/libsignal/ecc"
 
-	waProto "go.mau.fi/whatsmeow/binary/proto"
+	waProto "github.com/amiruldev20/wasock-test/binary/proto"
 )
 
 // WAVersionContainer is a container for a WhatsApp web version number.
@@ -123,7 +123,7 @@ var BaseClientPayload = &waProto.ClientPayload{
 }
 
 var DeviceProps = &waProto.DeviceProps{
-	Os: proto.String("whatsmeow"),
+	Os: proto.String("waSocket"),
 	Version: &waProto.DeviceProps_AppVersion{
 		Primary:   proto.Uint32(0),
 		Secondary: proto.Uint32(1),

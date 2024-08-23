@@ -4,8 +4,8 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-// Package whatsmeow implements a client for interacting with the WhatsApp web multidevice API.
-package whatsmeow
+// package waSocket implements a client for interacting with the WhatsApp web multidevice API.
+package waSocket
 
 import (
 	"context"
@@ -23,15 +23,15 @@ import (
 	"go.mau.fi/util/random"
 	"golang.org/x/net/proxy"
 
-	"go.mau.fi/whatsmeow/appstate"
-	waBinary "go.mau.fi/whatsmeow/binary"
-	waProto "go.mau.fi/whatsmeow/binary/proto"
-	"go.mau.fi/whatsmeow/socket"
-	"go.mau.fi/whatsmeow/store"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
-	"go.mau.fi/whatsmeow/util/keys"
-	waLog "go.mau.fi/whatsmeow/util/log"
+	"github.com/amiruldev20/wasock-test/appstate"
+	waBinary "github.com/amiruldev20/wasock-test/binary"
+	waProto "github.com/amiruldev20/wasock-test/binary/proto"
+	"github.com/amiruldev20/wasock-test/socket"
+	"github.com/amiruldev20/wasock-test/store"
+	"github.com/amiruldev20/wasock-test/types"
+	"github.com/amiruldev20/wasock-test/types/events"
+	"github.com/amiruldev20/wasock-test/util/keys"
+	waLog "github.com/amiruldev20/wasock-test/util/log"
 )
 
 // EventHandler is a function that can handle events from WhatsApp.
@@ -195,7 +195,7 @@ const handlerQueueSize = 2048
 //	if err != nil {
 //		panic(err)
 //	}
-//	client := whatsmeow.NewClient(deviceStore, nil)
+//	client := waSocket.NewClient(deviceStore, nil)
 func NewClient(deviceStore *store.Device, log waLog.Logger) *Client {
 	if log == nil {
 		log = waLog.Noop
@@ -595,7 +595,7 @@ func (cli *Client) Logout() error {
 // wrap the whole handler in another struct:
 //
 //	type MyClient struct {
-//		WAClient *whatsmeow.Client
+//		WAClient *waSocket.Client
 //		eventHandlerID uint32
 //	}
 //

@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package waSocket
 
 import (
 	"context"
@@ -17,9 +17,9 @@ import (
 	"go.mau.fi/libsignal/keys/prekey"
 	"go.mau.fi/libsignal/util/optional"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/util/keys"
+	waBinary "github.com/amiruldev20/wasock-test/binary"
+	"github.com/amiruldev20/wasock-test/types"
+	"github.com/amiruldev20/wasock-test/util/keys"
 )
 
 const (

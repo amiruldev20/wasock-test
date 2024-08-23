@@ -32,7 +32,7 @@ print("package proto")
 print()
 print("import (")
 for proto in new_protos.keys():
-  print(f'\t"go.mau.fi/whatsmeow/proto/{proto}"')
+  print(f'\t"github.com/amiruldev20/wasock-test/proto/{proto}"')
 print(")")
 print()
 
