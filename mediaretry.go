@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package waSocket
 
 import (
 	"fmt"
@@ -12,12 +12,12 @@ import (
 	"go.mau.fi/util/random"
 	"google.golang.org/protobuf/proto"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	waProto "go.mau.fi/whatsmeow/binary/proto"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
-	"go.mau.fi/whatsmeow/util/gcmutil"
-	"go.mau.fi/whatsmeow/util/hkdfutil"
+	waBinary "github.com/amiruldev20/wasock-test/binary"
+	waProto "github.com/amiruldev20/wasock-test/binary/proto"
+	"github.com/amiruldev20/wasock-test/types"
+	"github.com/amiruldev20/wasock-test/types/events"
+	"github.com/amiruldev20/wasock-test/util/gcmutil"
+	"github.com/amiruldev20/wasock-test/util/hkdfutil"
 )
 
 func getMediaRetryKey(mediaKey []byte) (cipherKey []byte) {

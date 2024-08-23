@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package whatsmeow
+package waSocket
 
 import (
 	"context"
@@ -28,11 +28,11 @@ import (
 	"go.mau.fi/util/random"
 	"google.golang.org/protobuf/proto"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	waProto "go.mau.fi/whatsmeow/binary/proto"
-	"go.mau.fi/whatsmeow/proto/waE2E"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
+	waBinary "github.com/amiruldev20/wasock-test/binary"
+	waProto "github.com/amiruldev20/wasock-test/binary/proto"
+	"github.com/amiruldev20/wasock-test/proto/waE2E"
+	"github.com/amiruldev20/wasock-test/types"
+	"github.com/amiruldev20/wasock-test/types/events"
 )
 
 // GenerateMessageID generates a random string that can be used as a message ID on WhatsApp.
