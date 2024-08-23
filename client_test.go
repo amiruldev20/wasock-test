@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package waSocket_test
+package whatsmeow_test
 
 import (
 	"context"
@@ -13,10 +13,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	waSocket "github.com/amiruldev20/wasock-test"
-	"github.com/amiruldev20/wasock-test/store/sqlstore"
-	"github.com/amiruldev20/wasock-test/types/events"
-	waLog "github.com/amiruldev20/wasock-test/util/log"
+	"go.mau.fi/whatsmeow"
+	"go.mau.fi/whatsmeow/store/sqlstore"
+	"go.mau.fi/whatsmeow/types/events"
+	waLog "go.mau.fi/whatsmeow/util/log"
 )
 
 func eventHandler(evt interface{}) {
@@ -42,7 +42,7 @@ func Example() {
 		panic(err)
 	}
 	clientLog := waLog.Stdout("Client", "DEBUG", true)
-	client := waSocket.NewClient(deviceStore, clientLog)
+	client := whatsmeow.NewClient(deviceStore, clientLog)
 	client.AddEventHandler(eventHandler)
 
 	if client.Store.ID == nil {

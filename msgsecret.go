@@ -4,24 +4,24 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package waSocket
+package whatsmeow
 
 import (
 	"crypto/sha256"
 	"fmt"
 	"time"
 
-	"github.com/amiruldev20/wasock-test/proto/waCommon"
-	"github.com/amiruldev20/wasock-test/proto/waE2E"
+	"go.mau.fi/whatsmeow/proto/waCommon"
+	"go.mau.fi/whatsmeow/proto/waE2E"
 
 	"go.mau.fi/util/random"
 	"google.golang.org/protobuf/proto"
 
-	waProto "github.com/amiruldev20/wasock-test/binary/proto"
-	"github.com/amiruldev20/wasock-test/types"
-	"github.com/amiruldev20/wasock-test/types/events"
-	"github.com/amiruldev20/wasock-test/util/gcmutil"
-	"github.com/amiruldev20/wasock-test/util/hkdfutil"
+	waProto "go.mau.fi/whatsmeow/binary/proto"
+	"go.mau.fi/whatsmeow/types"
+	"go.mau.fi/whatsmeow/types/events"
+	"go.mau.fi/whatsmeow/util/gcmutil"
+	"go.mau.fi/whatsmeow/util/hkdfutil"
 )
 
 type MsgSecretType string

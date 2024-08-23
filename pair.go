@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package waSocket
+package whatsmeow
 
 import (
 	"bytes"
@@ -17,11 +17,11 @@ import (
 	"go.mau.fi/libsignal/ecc"
 	"google.golang.org/protobuf/proto"
 
-	waBinary "github.com/amiruldev20/wasock-test/binary"
-	waProto "github.com/amiruldev20/wasock-test/binary/proto"
-	"github.com/amiruldev20/wasock-test/types"
-	"github.com/amiruldev20/wasock-test/types/events"
-	"github.com/amiruldev20/wasock-test/util/keys"
+	waBinary "go.mau.fi/whatsmeow/binary"
+	waProto "go.mau.fi/whatsmeow/binary/proto"
+	"go.mau.fi/whatsmeow/types"
+	"go.mau.fi/whatsmeow/types/events"
+	"go.mau.fi/whatsmeow/util/keys"
 )
 
 func (cli *Client) handleIQ(node *waBinary.Node) {

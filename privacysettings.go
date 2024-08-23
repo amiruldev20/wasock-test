@@ -4,15 +4,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package waSocket
+package whatsmeow
 
 import (
 	"strconv"
 	"time"
 
-	waBinary "github.com/amiruldev20/wasock-test/binary"
-	"github.com/amiruldev20/wasock-test/types"
-	"github.com/amiruldev20/wasock-test/types/events"
+	waBinary "go.mau.fi/whatsmeow/binary"
+	"go.mau.fi/whatsmeow/types"
+	"go.mau.fi/whatsmeow/types/events"
 )
 
 // TryFetchPrivacySettings will fetch the user's privacy settings, either from the in-memory cache or from the server.

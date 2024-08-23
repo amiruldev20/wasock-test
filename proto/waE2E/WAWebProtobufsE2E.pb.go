@@ -10,10 +10,10 @@ import (
 	reflect "reflect"
 	sync "sync"
 
-	waAdv "github.com/amiruldev20/wasock-test/proto/waAdv"
-	waCommon "github.com/amiruldev20/wasock-test/proto/waCommon"
-	waCompanionReg "github.com/amiruldev20/wasock-test/proto/waCompanionReg"
-	waMmsRetry "github.com/amiruldev20/wasock-test/proto/waMmsRetry"
+	waAdv "go.mau.fi/whatsmeow/proto/waAdv"
+	waCommon "go.mau.fi/whatsmeow/proto/waCommon"
+	waCompanionReg "go.mau.fi/whatsmeow/proto/waCompanionReg"
+	waMmsRetry "go.mau.fi/whatsmeow/proto/waMmsRetry"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 

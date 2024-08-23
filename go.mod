@@ -1,4 +1,4 @@
-module github.com/amiruldev20/wasock-test
+module go.mau.fi/whatsmeow
 
 go 1.21
 

@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package waSocket
+package whatsmeow
 
 import (
 	"bytes"
@@ -16,7 +16,7 @@ import (
 	"runtime/debug"
 	"time"
 
-	"github.com/amiruldev20/wasock-test/proto/waE2E"
+	"go.mau.fi/whatsmeow/proto/waE2E"
 
 	"go.mau.fi/libsignal/groups"
 	"go.mau.fi/libsignal/protocol"
@@ -25,12 +25,12 @@ import (
 	"go.mau.fi/util/random"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/amiruldev20/wasock-test/appstate"
-	waBinary "github.com/amiruldev20/wasock-test/binary"
-	waProto "github.com/amiruldev20/wasock-test/binary/proto"
-	"github.com/amiruldev20/wasock-test/store"
-	"github.com/amiruldev20/wasock-test/types"
-	"github.com/amiruldev20/wasock-test/types/events"
+	"go.mau.fi/whatsmeow/appstate"
+	waBinary "go.mau.fi/whatsmeow/binary"
+	waProto "go.mau.fi/whatsmeow/binary/proto"
+	"go.mau.fi/whatsmeow/store"
+	"go.mau.fi/whatsmeow/types"
+	"go.mau.fi/whatsmeow/types/events"
 )
 
 var pbSerializer = store.SignalProtobufSerializer

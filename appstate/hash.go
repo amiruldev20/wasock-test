@@ -14,8 +14,8 @@ import (
 	"fmt"
 	"hash"
 
-	"github.com/amiruldev20/wasock-test/appstate/lthash"
-	waProto "github.com/amiruldev20/wasock-test/binary/proto"
+	"go.mau.fi/whatsmeow/appstate/lthash"
+	waProto "go.mau.fi/whatsmeow/binary/proto"
 )
 
 type Mutation struct {

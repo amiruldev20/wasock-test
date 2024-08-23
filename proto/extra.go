@@ -3,10 +3,10 @@ package armadillo
 import (
 	"google.golang.org/protobuf/proto"
 
-	"github.com/amiruldev20/wasock-test/proto/waArmadilloApplication"
-	"github.com/amiruldev20/wasock-test/proto/waCommon"
-	"github.com/amiruldev20/wasock-test/proto/waConsumerApplication"
-	"github.com/amiruldev20/wasock-test/proto/waMultiDevice"
+	"go.mau.fi/whatsmeow/proto/waArmadilloApplication"
+	"go.mau.fi/whatsmeow/proto/waCommon"
+	"go.mau.fi/whatsmeow/proto/waConsumerApplication"
+	"go.mau.fi/whatsmeow/proto/waMultiDevice"
 )
 
 type MessageApplicationSub interface {

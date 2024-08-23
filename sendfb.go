@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package waSocket
+package whatsmeow
 
 import (
 	"context"
@@ -23,15 +23,15 @@ import (
 	"go.mau.fi/util/random"
 	"google.golang.org/protobuf/proto"
 
-	waBinary "github.com/amiruldev20/wasock-test/binary"
-	armadillo "github.com/amiruldev20/wasock-test/proto"
-	"github.com/amiruldev20/wasock-test/proto/waArmadilloApplication"
-	"github.com/amiruldev20/wasock-test/proto/waCommon"
-	"github.com/amiruldev20/wasock-test/proto/waConsumerApplication"
-	"github.com/amiruldev20/wasock-test/proto/waMsgApplication"
-	"github.com/amiruldev20/wasock-test/proto/waMsgTransport"
-	"github.com/amiruldev20/wasock-test/types"
-	"github.com/amiruldev20/wasock-test/types/events"
+	waBinary "go.mau.fi/whatsmeow/binary"
+	armadillo "go.mau.fi/whatsmeow/proto"
+	"go.mau.fi/whatsmeow/proto/waArmadilloApplication"
+	"go.mau.fi/whatsmeow/proto/waCommon"
+	"go.mau.fi/whatsmeow/proto/waConsumerApplication"
+	"go.mau.fi/whatsmeow/proto/waMsgApplication"
+	"go.mau.fi/whatsmeow/proto/waMsgTransport"
+	"go.mau.fi/whatsmeow/types"
+	"go.mau.fi/whatsmeow/types/events"
 )
 
 const FBMessageVersion = 3

@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package waSocket
+package whatsmeow
 
 import (
 	"crypto/hmac"
@@ -22,11 +22,11 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 
-	waProto "github.com/amiruldev20/wasock-test/binary/proto"
-	"github.com/amiruldev20/wasock-test/proto/waMediaTransport"
-	"github.com/amiruldev20/wasock-test/socket"
-	"github.com/amiruldev20/wasock-test/util/cbcutil"
-	"github.com/amiruldev20/wasock-test/util/hkdfutil"
+	waProto "go.mau.fi/whatsmeow/binary/proto"
+	"go.mau.fi/whatsmeow/proto/waMediaTransport"
+	"go.mau.fi/whatsmeow/socket"
+	"go.mau.fi/whatsmeow/util/cbcutil"
+	"go.mau.fi/whatsmeow/util/hkdfutil"
 )
 
 // MediaType represents a type of uploaded file on WhatsApp.

@@ -4,15 +4,15 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package waSocket
+package whatsmeow
 
 import (
 	"time"
 
-	waBinary "github.com/amiruldev20/wasock-test/binary"
-	"github.com/amiruldev20/wasock-test/store"
-	"github.com/amiruldev20/wasock-test/types"
-	"github.com/amiruldev20/wasock-test/types/events"
+	waBinary "go.mau.fi/whatsmeow/binary"
+	"go.mau.fi/whatsmeow/store"
+	"go.mau.fi/whatsmeow/types"
+	"go.mau.fi/whatsmeow/types/events"
 )
 
 func (cli *Client) handleStreamError(node *waBinary.Node) {
@@ -174,7 +174,7 @@ func (cli *Client) handleConnectSuccess(node *waBinary.Node) {
 // SetPassive tells the WhatsApp server whether this device is passive or not.
 //
 // This seems to mostly affect whether the device receives certain events.
-// By default, waSocket will automatically do SetPassive(false) after connecting.
+// By default, whatsmeow will automatically do SetPassive(false) after connecting.
 func (cli *Client) SetPassive(passive bool) error {
 	tag := "active"
 	if passive {

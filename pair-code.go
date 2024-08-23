@@ -4,7 +4,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-package waSocket
+package whatsmeow
 
 import (
 	"crypto/aes"
@@ -19,10 +19,10 @@ import (
 	"golang.org/x/crypto/curve25519"
 	"golang.org/x/crypto/pbkdf2"
 
-	waBinary "github.com/amiruldev20/wasock-test/binary"
-	"github.com/amiruldev20/wasock-test/types"
-	"github.com/amiruldev20/wasock-test/util/hkdfutil"
-	"github.com/amiruldev20/wasock-test/util/keys"
+	waBinary "go.mau.fi/whatsmeow/binary"
+	"go.mau.fi/whatsmeow/types"
+	"go.mau.fi/whatsmeow/util/hkdfutil"
+	"go.mau.fi/whatsmeow/util/keys"
 )
 
 // PairClientType is the type of client to use with PairCode.
