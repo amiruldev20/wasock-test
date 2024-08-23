@@ -13,7 +13,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/amiruldev20/wasock-test"
+	waSocket "github.com/amiruldev20/wasock-test"
 	"github.com/amiruldev20/wasock-test/store/sqlstore"
 	"github.com/amiruldev20/wasock-test/types/events"
 	waLog "github.com/amiruldev20/wasock-test/util/log"
@@ -42,7 +42,7 @@ func Example() {
 		panic(err)
 	}
 	clientLog := waLog.Stdout("Client", "DEBUG", true)
-	client := whatsmeow.NewClient(deviceStore, clientLog)
+	client := waSocket.NewClient(deviceStore, clientLog)
 	client.AddEventHandler(eventHandler)
 
 	if client.Store.ID == nil {
